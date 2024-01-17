@@ -9,5 +9,9 @@ Bienvenue sur notre projet de gestion de stage, développé avec passion par @om
 1. Clonez le dépôt : `git clone https://github.com/omayma-dhaker/gestion-de-stage.git`
 2. Installez les dépendances : `composer install`
 3. Commencez à contribuer et envoyez vos pull requests.
+4. Rename .env.example to .env
+5. Generate encription key `php artisan key:generate`
+6. Setup database credentials in .env
+7. Starting the app: `php artisan serve`
 
 Nous sommes impatients de recevoir vos retours et contributions. Merci de faire partie de notre communauté !
