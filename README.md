@@ -13,5 +13,6 @@ Bienvenue sur notre projet de gestion de stage, développé avec passion par @om
 5. Generate encription key `php artisan key:generate`
 6. Setup database credentials in .env
 7. Starting the app: `php artisan serve`
+8. Migrations the database `php artisan migrate`
 
 Nous sommes impatients de recevoir vos retours et contributions. Merci de faire partie de notre communauté !
