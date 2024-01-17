@@ -1,3 +1,4 @@
 # Stagi
 
-stagi
+Plateforme web de gestion de stages
+
