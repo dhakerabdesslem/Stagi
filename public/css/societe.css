@@ -1,0 +1,79 @@
+/* Reset des styles par défaut */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style de base pour le corps de la page */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Style pour le titre */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Style pour chaque société */
+.société {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* Style pour les titres de société */
+.société h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+/* Style pour les informations de contact */
+.société p {
+  margin-bottom: 5px;
+}
+
+/* Style pour les radios et les labels */
+input[type="radio"] {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+label {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+/* Style lorsque la souris survole une société */
+.société:hover {
+  background-color: #f9f9f9;
+}
+/* ... Vos styles existants ... */
+
+/* Style pour la section de demande de stage */
+.demande-stage {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Style pour le bouton d'envoi */
+.demande-stage button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #007bff; /* Couleur du fond du bouton */
+  color: #fff; /* Couleur du texte */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Changement de couleur du bouton au survol */
+.demande-stage button:hover {
+  background-color: #0056b3; /* Nouvelle couleur de fond au survol */
+}

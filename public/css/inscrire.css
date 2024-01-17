@@ -1,0 +1,62 @@
+/* styles.css */
+
+/* Centrer verticalement et horizontalement le contenu */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Espacement entre les éléments */
+  .card-body > * {
+    margin-bottom: 15px;
+  }
+  
+  /* Largeur maximale du formulaire */
+  .card {
+    max-width: 400px;
+    width: 90%; /* Utiliser une largeur adaptable pour les écrans plus petits */
+    margin: 0 auto; /* Centrer horizontalement */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ajouter une légère ombre */
+      background-color: rgb(255, 241, 241);
+  }
+  
+  /* Centrer le titre */
+  .card-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Style pour les boutons */
+  .btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Ajouter une transition douce */
+  }
+  
+  .btn:hover {
+    background-color: #f0f0f0; /* Légère variation de couleur au survol */
+  }
+  
+  /* Style pour les champs de formulaire */
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Style pour les étiquettes */
+  .form-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  

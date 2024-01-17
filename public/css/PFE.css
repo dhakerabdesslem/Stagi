@@ -1,0 +1,41 @@
+/* styles.css */
+
+/* Style pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Style pour le conteneur principal */
+  .container {
+    padding-top: 20px;
+  }
+  
+  /* Style pour les titres */
+  h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #007bff;
+  }
+  
+  /* Style pour les colonnes */
+  .col-md-6 {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  /* Style pour les détails */
+  p {
+    margin-bottom: 10px;
+  }
+  
+  /* Style pour les détails spécifiques */
+  .details {
+    font-weight: bold;
+    color: #444;
+  }
+  

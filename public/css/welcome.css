@@ -1,0 +1,119 @@
+/* style.css */
+
+/* Styles pour le header */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+header span {
+  color: red;
+}
+
+/* Styles pour la section de contenu */
+.page {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styles pour les boutons */
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Styles pour les liens à l'intérieur des boutons */
+button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Styles pour le footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+  margin-top: 20px;
+}
+/* style.css */
+
+/* Styles pour le header */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+header span {
+  color: red;
+}
+
+/* Styles pour la section de contenu */
+.page {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styles pour les boutons */
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Styles pour les liens à l'intérieur des boutons */
+button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Styles pour le footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+  margin-top: 20px;
+}
+
