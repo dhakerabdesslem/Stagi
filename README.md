@@ -2,7 +2,7 @@
 
 Plateforme de Gestion de Stage
 
-Bienvenue sur notre projet de gestion de stage, développé avec passion par @omaima et @Dhaker. Cette plateforme offre une solution complète pour simplifier et optimiser le processus de gestion des stages, que ce soit pour les étudiants, les superviseurs de stage ou les administrateurs.
+Bienvenue sur notre projet de gestion de stage, développé avec passion par @dhakerabdesslem et @oumaima23-mhj. Cette plateforme offre une solution complète pour simplifier et optimiser le processus de gestion des stages, que ce soit pour les étudiants, les superviseurs de stage ou les administrateurs.
 
 **Comment contribuer :**
 
