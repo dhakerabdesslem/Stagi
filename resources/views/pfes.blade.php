@@ -18,7 +18,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach($enseignants as $enseignant)
+                        @foreach($pfes as $enseignant)
                             <tr>
                                 <td>{{ $enseignant->id }}</td>
                                 <td>{{ $enseignant->Nom }}</td>

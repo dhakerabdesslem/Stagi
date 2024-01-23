@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class PFE extends Model
 {
+    protected $table = 'pfes';
     use HasFactory;
 
     protected $primaryKey = 'PFEID';

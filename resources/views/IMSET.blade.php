@@ -9,8 +9,8 @@
     <h1 align="center">options principales</h1>
   <div class='page'>
    <div class='container'>
-     <a class='item' href="{{ route('informations') }}">
-       <p>informations</p>
+    <a class='item' href="{{ route('getetudiant') }}">
+      <p>informations</p>
      </a>
      <a class='item' href="{{ route('enseignant') }}">
        <p>enseignant(e)</p>

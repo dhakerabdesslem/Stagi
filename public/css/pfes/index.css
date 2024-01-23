@@ -1,0 +1,63 @@
+/* Styles pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Style pour le titre */
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+/* Style pour le lien "Ajouter un Projet de Fin d'Études" */
+a {
+    display: block;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 4px;
+}
+
+a:hover {
+    background-color: #2980b9;
+}
+
+/* Style pour la table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Style pour les cellules de la table */
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Style pour les en-têtes de colonnes */
+th {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Style pour les boutons de suppression */
+button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #c0392b;
+}

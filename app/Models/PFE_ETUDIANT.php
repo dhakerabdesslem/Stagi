@@ -8,19 +8,23 @@ use Illuminate\Database\Eloquent\Model;
 
 class PFE_ETUDIANT extends Model
 {
+    protected $table = 'pfe_etudiants';
+
     use HasFactory;
 
     protected $fillable = ['PFEID', 'EtudiantID'];
 
     public $timestamps = true;
 
-    public function pfe()
-    {
-        return $this->belongsTo(PFE::class, 'PFEID');
-    }
 
-    public function etudiant()
-    {
-        return $this->belongsTo(Etudiant::class, 'EtudiantID');
-    }
+public function pfe()
+{
+    return $this->belongsTo(Pfe::class, 'PFEID');
+}
+
+public function etudiant()
+{
+    return $this->belongsTo(Etudiant::class, 'EtudiantID');
+}
+
 }

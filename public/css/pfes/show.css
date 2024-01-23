@@ -1,0 +1,41 @@
+/* Styles pour le conteneur principal */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+}
+
+/* Style pour le titre principal */
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+/* Style pour le sous-titre */
+h2 {
+    color: #3498db;
+}
+
+/* Styles pour les détails du projet */
+p {
+    margin-bottom: 10px;
+}
+
+/* Style pour le lien de retour */
+a {
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 4px;
+}
+
+a:hover {
+    background-color: #2980b9;
+}
