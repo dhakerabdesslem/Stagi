@@ -2,37 +2,50 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>page index</title>
+  <title>Stagi - Home Page</title>
   <link href="{{ asset('css/style.css') }}" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
   <header>
-  <div class="col-lg-3 bg-dark d-none d-lg-block">
-            <a href="welcome.blade.php" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
-                <img src="" style="max-width: 80px; max-height: 80px;">
-            </a>
-        </div>
-    <h1>Bienvenue sur notre application <span style="color:red"> stagi</span></h1>
-  </header>
-
-  <div class='page'>
-   <div class='container'>
-     <button class="w3-btn w3-border w3-jumbo" ><a class='item' href="{{ route('inscrire') }}">
-       <p>s'inscrire</p>
-       </a> </button>
-      <button class="w3-btn w3-border w3-jumbo"> <a class='item' href="{{ route('login') }}">
-       <p>Connexion</p>
-     </a>
-     </button>
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Stagi</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">Stagi</a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a class="active" href="/"><span class="glyphicon glyphicon-home"></span> Home</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+      <li><a href="{{ route('inscrire') }}"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="{{ route('login') }}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+      </div>
+      <!--/.nav-collapse -->
     </div>
- </div> 
+  </div>
+<div class="jumbotron">
+  <h1>Stagi</h1>      
+  <p>Bienvenue sur notre Plateforme </p>
+</div>
+</header>
 </div>
   <footer>
     <p>Contactez-nous : contact@imset.tn</p>
     numero telephone : (+216) 71 79 66 79
+    <br/>
     <sub>powred by IMSET sousse</sub>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
