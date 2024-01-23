@@ -5,6 +5,7 @@ use App\Http\Controllers\EnseignantController;
 use App\Http\Controllers\EtudiantController;
 use App\Http\Controllers\PFEController;
 use App\Http\Controllers\SocieteController;
+use App\Http\Controllers\PfeEtudiantController;
 
 /*
 |--------------------------------------------------------------------------
@@ -56,6 +57,7 @@ Route::delete('/deleteetudiant/{id}', [EtudiantController::class, 'destroy']);
 
 // Routes for PFEController
 
+Route::resource('pfe_etudiants', PfeEtudiantController::class);
 
 Route::get('/pfes/create', [PFEController::class, 'create'])->name('pfes.create');
 Route::post('/pfes/store', [PFEController::class, 'store'])->name('pfes.store');
@@ -77,7 +79,7 @@ Route::get('/societes/{societe}/edit', [SocieteController::class, 'edit'])->name
 Route::put('/societes/{societe}', [SocieteController::class, 'update'])->name('societes.update');
 Route::delete('/societes/{societe}', [SocieteController::class, 'destroy'])->name('societes.destroy');
 
-use App\Http\Controllers\PfeEtudiantController;
+
 Route::get('/pfe_etudiant', [PfeEtudiantController::class, 'index'])->name('pfe_etudiant.index');
 Route::get('/pfe_etudiant/create', [PfeEtudiantController::class, 'create'])->name('pfe_etudiant.create');
 Route::post('/pfe_etudiant', [PfeEtudiantController::class, 'store'])->name('pfe_etudiant.store');

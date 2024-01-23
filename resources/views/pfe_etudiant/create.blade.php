@@ -1,39 +1,34 @@
-<!-- resources/views/pfe_etudiant/index.blade.php -->
+<!-- resources/views/pfe_etudiants/create.blade.php -->
 
 
     <div class="container">
-        <h2>PFE Etudiants</h2>
-        <a href="{{ route('pfe_etudiant.create') }}" class="btn btn-primary">Create New PFE Etudiant</a>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>PFE</th>
-                    <th>Etudiant</th>
-                    <th>Created At</th>
-                    <th>Updated At</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach ($pfeEtudiants as $pfeEtudiant)
-                    <tr>
-                        <td>{{ $pfeEtudiant->id }}</td>
-                        <td>{{ $pfeEtudiant->pfe->Titre }}</td>
-                        <td>{{ $pfeEtudiant->etudiant->Nom }} {{ $pfeEtudiant->etudiant->Prenom }}</td>
-                        <td>{{ $pfeEtudiant->created_at }}</td>
-                        <td>{{ $pfeEtudiant->updated_at }}</td>
-                        <td>
-                            <a href="{{ route('pfe_etudiant.show', $pfeEtudiant->id) }}" class="btn btn-info">View</a>
-                            <a href="{{ route('pfe_etudiant.edit', $pfeEtudiant->id) }}" class="btn btn-warning">Edit</a>
-                            <form action="{{ route('pfe_etudiant.destroy', $pfeEtudiant->id) }}" method="POST" style="display: inline;">
-                                @csrf
-                                @method('DELETE')
-                                <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure?')">Delete</button>
-                            </form>
-                        </td>
-                    </tr>
-                @endforeach
-            </tbody>
-        </table>
+        <h1>Ajouter un Étudiant à un Projet de Fin d'Études</h1>
+
+        <form method="POST" action="{{ route('pfe_etudiants.store') }}">
+            @csrf
+
+            <div class="form-group">
+                <label for="PFEID">Sélectionner le Projet de Fin d'Études :</label>
+                <select name="PFEID" class="form-control" required>
+                    @foreach($pfes as $pfe)
+                        <option value="{{ $pfe->PFEID }}">{{ $pfe->Titre }}</option>
+                    @endforeach
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="EtudiantID">Sélectionner l'Étudiant :</label>
+                <select name="EtudiantID" class="form-control" required>
+                    @foreach($etudiants as $etudiant)
+                        <option value="{{ $etudiant->id }}">{{ $etudiant->Nom }} {{ $etudiant->Prenom }}</option>
+                    @endforeach
+                </select>
+            </div>
+
+            <!-- Add other form fields as needed -->
+
+            <button type="submit" class="btn btn-primary">Ajouter l'Étudiant au Projet</button>
+        </form>
+
+        <a href="{{ route('pfe_etudiants.index') }}">Retour à la liste des Étudiants dans les Projets de Fin d'Études</a>
     </div>
