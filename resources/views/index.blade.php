@@ -32,9 +32,9 @@
       <li><a href="{{ route('login') }}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
     </ul>
       </div>
-      <!--/.nav-collapse -->
     </div>
   </div>
+</div>
 <div class="jumbotron">
   <h1>Stagi</h1>      
   <p>Bienvenue sur notre Plateforme </p>
@@ -42,10 +42,7 @@
 </header>
 </div>
   <footer>
-    <p>Contactez-nous : contact@imset.tn</p>
-    numero telephone : (+216) 71 79 66 79
-    <br/>
-    <sub>powred by IMSET sousse</sub>
+    <sub>Powred By IMSET Sousse</sub>
   </footer>
 </body>
 </html>

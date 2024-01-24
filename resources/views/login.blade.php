@@ -2,10 +2,8 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Page de Connexion</title>
-  <!-- Liens vers Bootstrap CSS -->
+  <title>Stagi - Login</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Liens vers votre fichier CSS personnalisé (optionnel) -->
   <link href="styles.css" rel="stylesheet">
 </head>
 <body>
@@ -17,7 +15,6 @@
             <h3 class="card-title text-center">Connexion</h3>
           </div>
           <div class="card-body">
-            <!-- Formulaire de connexion -->
             <form id="loginForm">
               <div class="mb-3">
                 <label for="username" class="form-label">adresse </label>
@@ -37,17 +34,13 @@
     </div>
   </div>
 
-  <!-- Liens vers Bootstrap JS et jQuery pour les fonctionnalités (nécessaires pour certains composants Bootstrap) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
   <script>
-    // Votre logique JavaScript pour la gestion de la connexion ici
     document.getElementById('loginForm').addEventListener('submit', function(event) {
       event.preventDefault();
-      // Récupération des données du formulaire
       var username = document.getElementById('username').value;
       var password = document.getElementById('password').value;
-      // Ici vous pouvez ajouter la logique de connexion
     });
   </script>
 </body>
