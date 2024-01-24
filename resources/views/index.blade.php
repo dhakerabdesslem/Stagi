@@ -24,8 +24,13 @@
       </div>
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-          <li><a class="active" href="/"><span class="glyphicon glyphicon-home"></span> Home</a>
-          </li>
+          <li><a class="active" href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+          <li><a  href="/enseignants"><span class="glyphicon glyphicon"></span>Enseignants</a></li>
+          <li><a  href="/getetudiant"><span class="glyphicon glyphicon"></span>Etudiants</a></li>
+          <li><a  href="/pfes/index"><span class="glyphicon glyphicon"></span>PFES</a></li>
+          <li><a  href="/societes"><span class="glyphicon glyphicon"></span>Societes</a></li>
+
+          
         </ul>
         <ul class="nav navbar-nav navbar-right">
       <li><a href="{{ route('inscrire') }}"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
